@@ -31,7 +31,7 @@ export default defineConfig({
     configSchema(),
     solidJs(),
     starlight({
-      title: "OpenCode",
+      title: "Lio",
       defaultLocale: "root",
       locales: {
         root: {
@@ -125,13 +125,13 @@ export default defineConfig({
           dir: "ltr",
         },
       },
-      favicon: "/favicon-v3.svg",
+      favicon: "/lio-symbol.svg",
       head: [
         {
           tag: "link",
           attrs: {
             rel: "icon",
-            href: "/favicon-v3.ico",
+            href: "/lio-symbol.svg",
             sizes: "32x32",
           },
         },
@@ -140,7 +140,7 @@ export default defineConfig({
           attrs: {
             rel: "icon",
             type: "image/png",
-            href: "/favicon-96x96-v3.png",
+            href: "/lio-symbol.svg",
             sizes: "96x96",
           },
         },
@@ -148,7 +148,7 @@ export default defineConfig({
           tag: "link",
           attrs: {
             rel: "apple-touch-icon",
-            href: "/apple-touch-icon-v3.png",
+            href: "/lio-symbol.svg",
             sizes: "180x180",
           },
         },
@@ -167,8 +167,8 @@ export default defineConfig({
       },
       customCss: ["./src/styles/custom.css"],
       logo: {
-        light: "./src/assets/logo-light.svg",
-        dark: "./src/assets/logo-dark.svg",
+        light: "./src/assets/lio-logo.svg",
+        dark: "./src/assets/lio-logo.svg",
         replacesTitle: true,
       },
       sidebar: [

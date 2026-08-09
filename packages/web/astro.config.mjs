@@ -114,6 +114,11 @@ export default defineConfig({
           lang: "tr-TR",
           dir: "ltr",
         },
+        vi: {
+          label: "Tiếng Việt",
+          lang: "vi-VN",
+          dir: "ltr",
+        },
         "zh-cn": {
           label: "简体中文",
           lang: "zh-CN",

@@ -9,14 +9,23 @@ import { rehypeHeadingIds } from "@astrojs/markdown-remark"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import { spawnSync } from "child_process"
 
+const netlifyBuild = process.env.NETLIFY_BUILD === "true"
+
 // https://astro.build/config
 export default defineConfig({
   site: config.url,
   base: "/docs",
-  output: "server",
-  adapter: cloudflare({
-    imageService: "passthrough",
-  }),
+  output: netlifyBuild ? "static" : "server",
+  ...(netlifyBuild
+    ? { image: { service: { entrypoint: "astro/assets/services/noop" } } }
+    : {}),
+  ...(netlifyBuild
+    ? {}
+    : {
+        adapter: cloudflare({
+          imageService: "passthrough",
+        }),
+      }),
   devToolbar: {
     enabled: false,
   },

@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "bun install --frozen-lockfile && bun --cwd apps/website run build"
+  command = "bun install --frozen-lockfile && bun run build:netlify"
   publish = "apps/website/dist"
 
 [build.environment]

@@ -195,6 +195,14 @@ export default defineConfig({
           },
           link: "vi/lo-la-gi",
         },
+        {
+          label: "Bài toán ERP cho doanh nghiệp",
+          translations: {
+            en: "ERP problems for businesses",
+            vi: "Bài toán ERP cho doanh nghiệp",
+          },
+          link: "vi/5-bai-toan-erp",
+        },
         "",
         "config",
         "providers",

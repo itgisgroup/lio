@@ -1,0 +1,78 @@
+---
+title: 5 bài toán ERP có thể bắt đầu ngay
+description: Năm tình huống vận hành doanh nghiệp mà Lio có thể giúp đội ngũ khám phá và cải tiến một cách có kiểm soát.
+---
+
+Không phải doanh nghiệp nào cũng nên bắt đầu bằng một dự án AI lớn. Cách an toàn hơn là chọn một vấn đề vận hành cụ thể, làm rõ phạm vi, kiểm tra dữ liệu và thử thay đổi trong sandbox.
+
+Dưới đây là năm bài toán có thể dùng để bắt đầu một cuộc trao đổi thực tế với Lio và đội ERPCloud.
+
+## 1. Đơn hàng cần nhiều cấp phê duyệt
+
+**Dấu hiệu:** Đơn giá trị lớn phải xin duyệt qua email hoặc chat; nhân viên không biết trạng thái hiện tại; có nguy cơ giao hàng trước khi đủ phê duyệt.
+
+**Câu hỏi nên đặt ra:** Ngưỡng giá trị nào cần thêm cấp duyệt? Ai được duyệt ở từng bước? Nếu người duyệt vắng mặt thì quy trình xử lý thế nào?
+
+**Lio hỗ trợ ở đâu:** Đọc workflow bán hàng, nhóm quyền, rule hiện có và các module liên quan để lập phạm vi SRS/RBD trước khi đề xuất patch.
+
+**Bằng chứng cần kiểm tra:** Ma trận người duyệt, log thay đổi trạng thái, test case cho đơn thường và đơn vượt ngưỡng.
+
+**Khi cần ERPCloud:** Khi quy trình liên quan tới phân quyền liên phòng ban, kế toán, kho hoặc cần thay đổi chính sách vận hành.
+
+## 2. Tồn kho lệch giữa thực tế và hệ thống
+
+**Dấu hiệu:** Số lượng trên báo cáo không khớp kho thực tế; điều chỉnh tồn không truy được lý do; cùng một mã hàng có nhiều cách ghi nhận.
+
+**Câu hỏi nên đặt ra:** Lệch phát sinh ở nhận hàng, xuất hàng, chuyển kho hay kiểm kê? Ai được điều chỉnh? Cần lưu bằng chứng nào?
+
+**Lio hỗ trợ ở đâu:** Kết nối context của inventory, barcode, warehouse route và quyền điều chỉnh để khoanh vùng nguyên nhân trước khi sửa.
+
+**Bằng chứng cần kiểm tra:** Lịch sử move, biên bản kiểm kê, chênh lệch theo location và test cho luồng nhận/xuất/chuyển.
+
+**Khi cần ERPCloud:** Khi cần chuẩn hóa mã hàng, quy trình kho, tích hợp thiết bị hoặc đào tạo lại người dùng.
+
+## 3. Báo cáo quản trị mất nhiều thời gian tổng hợp
+
+**Dấu hiệu:** Cuối tháng phải ghép nhiều file; số liệu giữa phòng ban không đồng nhất; lãnh đạo nhận báo cáo quá muộn để ra quyết định.
+
+**Câu hỏi nên đặt ra:** Chỉ số nào thực sự cần để điều hành? Nguồn dữ liệu nào là chuẩn? Ai chịu trách nhiệm xác nhận số liệu?
+
+**Lio hỗ trợ ở đâu:** Giúp mô tả KPI, tìm nguồn dữ liệu và dependency, sau đó tạo proposal dashboard hoặc báo cáo để review trước khi xây.
+
+**Bằng chứng cần kiểm tra:** Định nghĩa KPI, truy xuất nguồn số liệu, đối chiếu với sổ/báo cáo gốc và test quyền xem.
+
+**Khi cần ERPCloud:** Khi KPI liên quan tới kế toán Việt Nam, hợp nhất dữ liệu hoặc cần thiết kế lại quy trình ghi nhận từ đầu.
+
+## 4. Nhân viên làm sai quy trình hoặc thiếu hướng dẫn
+
+**Dấu hiệu:** Cùng một việc nhưng mỗi người làm một cách; lỗi lặp lại; người mới phụ thuộc vào một vài nhân sự lâu năm.
+
+**Câu hỏi nên đặt ra:** Quy trình chuẩn hiện tại là gì? Bước nào thường bị bỏ qua? Có thể kiểm soát bằng quyền, trạng thái hay hướng dẫn ngay trên ERP không?
+
+**Lio hỗ trợ ở đâu:** Chuyển mô tả nghiệp vụ thành checklist, SRS và test scenario dễ đọc; không tự thay đổi quy trình khi chưa có người chịu trách nhiệm xác nhận.
+
+**Bằng chứng cần kiểm tra:** Tỷ lệ lỗi, thời gian xử lý, các bước bắt buộc và phản hồi của key user.
+
+**Khi cần ERPCloud:** Khi vấn đề nằm ở thiết kế vận hành, đào tạo, phân quyền hoặc cần đồng bộ nhiều phòng ban.
+
+## 5. Muốn thay đổi ERP nhưng lo ảnh hưởng production
+
+**Dấu hiệu:** Đội ngũ có nhu cầu cải tiến nhưng ngại triển khai; từng gặp lỗi sau nâng cấp; không có nơi thử nghiệm hoặc kế hoạch quay lui.
+
+**Câu hỏi nên đặt ra:** Thay đổi ảnh hưởng module nào? Có thể thử bằng dữ liệu mẫu không? Điều kiện phê duyệt và rollback là gì?
+
+**Lio hỗ trợ ở đâu:** Tạo patch trong sandbox/worktree riêng, chạy test và gom evidence để người phụ trách review. Lio không tự sửa production và không bỏ qua approval gate.
+
+**Bằng chứng cần kiểm tra:** Diff, kết quả test, impact summary, recovery point và người phê duyệt signed change set.
+
+**Khi cần ERPCloud:** Khi thay đổi liên quan dữ liệu thật, tích hợp bên ngoài, migration hoặc cần chịu trách nhiệm triển khai end-to-end.
+
+## Bắt đầu nhỏ, đo được và có người chịu trách nhiệm
+
+Bạn không cần chuẩn bị một bản yêu cầu kỹ thuật hoàn hảo. Hãy bắt đầu bằng một vấn đề, một quy trình hiện tại và một kết quả mong muốn.
+
+- Đọc [Lio là gì?](/docs/vi/lo-la-gi) để hiểu vòng đời yêu cầu → evidence → approval.
+- [Xem LioDev trên GitHub](https://github.com/itgisgroup/lio) để tìm hiểu nền tảng.
+- [Trao đổi cùng ERPCloud qua Zalo](https://zalo.me/0909099590) khi cần đánh giá phạm vi triển khai.
+
+Lio giúp đội ngũ đặt câu hỏi đúng và tạo thay đổi có kiểm soát; quyết định cuối cùng vẫn thuộc về doanh nghiệp và người chịu trách nhiệm hệ thống.

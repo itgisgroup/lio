@@ -114,7 +114,7 @@ Tìm hiểu thêm về [agents](https://opencode.ai/docs/agents).
 
 ### Tài liệu
 
-Để bắt đầu tìm hiểu Lio, đọc bài [**Lio là gì?**](https://lio.vn/docs/vi/lo-la-gi). Tài liệu kỹ thuật đầy đủ có tại [**khu vực tài liệu**](https://lio.vn/docs/vi).
+Để bắt đầu tìm hiểu Lio, đọc [**Lio là gì?**](https://lio.vn/docs/vi/lo-la-gi) và [**5 bài toán ERP có thể bắt đầu ngay**](https://lio.vn/docs/vi/5-bai-toan-erp). Tài liệu kỹ thuật đầy đủ có tại [**khu vực tài liệu**](https://lio.vn/docs/vi).
 
 ### Đóng góp
 

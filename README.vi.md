@@ -114,7 +114,7 @@ Tìm hiểu thêm về [agents](https://opencode.ai/docs/agents).
 
 ### Tài liệu
 
-Để biết thêm thông tin về cách cấu hình OpenCode, [**hãy truy cập tài liệu của chúng tôi**](https://opencode.ai/docs).
+Để bắt đầu tìm hiểu Lio, đọc bài [**Lio là gì?**](https://lio.vn/docs/vi/lo-la-gi). Tài liệu kỹ thuật đầy đủ có tại [**khu vực tài liệu**](https://lio.vn/docs/vi).
 
 ### Đóng góp
 

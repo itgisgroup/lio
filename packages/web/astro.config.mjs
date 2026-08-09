@@ -178,6 +178,14 @@ export default defineConfig({
         replacesTitle: true,
       },
       sidebar: [
+        {
+          label: "Bắt đầu với Lio",
+          translations: {
+            en: "Start with Lio",
+            vi: "Bắt đầu với Lio",
+          },
+          link: "vi/lo-la-gi",
+        },
         "",
         "config",
         "providers",

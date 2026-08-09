@@ -172,8 +172,9 @@ export default defineConfig({
       },
       customCss: ["./src/styles/custom.css"],
       logo: {
-        light: "./src/assets/lio-logo.svg",
-        dark: "./src/assets/lio-logo.svg",
+        light: "./src/assets/liodev-logo.svg",
+        dark: "./src/assets/liodev-logo.svg",
+        alt: "Liodev",
         replacesTitle: true,
       },
       sidebar: [

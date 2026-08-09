@@ -172,7 +172,7 @@ export default defineConfig({
       },
       customCss: ["./src/styles/custom.css"],
       logo: {
-        light: "./src/assets/liodev-logo.svg",
+        light: "./src/assets/liodev-logo-light.svg",
         dark: "./src/assets/liodev-logo.svg",
         alt: "Liodev",
         replacesTitle: true,

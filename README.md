@@ -1,4 +1,12 @@
 <p align="center">
+  <strong>Lio — AI Agents cho doanh nghiệp vận hành số</strong>
+</p>
+<p align="center">Lio hiểu doanh nghiệp. LioDev biến ý tưởng thành hệ thống.</p>
+<p align="center">
+  Lio is an open-source AI Agent ecosystem for ERP: Odoo context, coding skills, sandbox execution and approval-based delivery.
+</p>
+
+<p align="center">
   <a href="https://opencode.ai">
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
